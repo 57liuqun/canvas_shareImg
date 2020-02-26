@@ -1,0 +1,9 @@
+<!--pages/shareImgPage/shareImgPage.wxml-->
+<button catchtap="toShare">生成分享图</button>
+<view id="shareCon" class="{{canvasShow?'shareShow':'shareHide'}}" catchtap="closeCanvas">
+  <view id="shareMain"  wx:if="{{!pView}}">
+    <canvas style='width:{{canvasWidth}}px;height:{{canvasHeight}}px' canvas-id='myCanvas' id="shareCon1"></canvas>
+    <button type="info" id="shareCon2" catchtap="savePicture">保存图片</button>
+  </view>
+  <image src="{{imagePath}}" wx:else></image>
+</view>
