@@ -1,4 +1,4 @@
-// pages/purchase/component/mertialNeed/metialNeddDetail/metialNeddDetail.js
+
 var ctx = "" // 用于获取canvas
 var canvasWidth1 = ""
 var canvasHeight1 = ""
